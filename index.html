@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Farouk El Hammoumi rocket launch base portfolio." />
+    <title>Farouk El Hammoumi | Rocket Launch Portfolio</title>
+    <link rel="stylesheet" href="./src/styles.css?v=rocket-performance-content" />
+  </head>
+  <body>
+    <main id="app-shell">
+      <canvas id="scene-canvas" aria-label="Interactive 3D rocket launch portfolio"></canvas>
+      <div class="atmosphere" aria-hidden="true"></div>
+      <div class="scanline" aria-hidden="true"></div>
+
+      <header class="top-hud">
+        <div>
+          <p class="eyebrow">Launch Base Portfolio</p>
+          <h1>Farouk El Hammoumi</h1>
+        </div>
+        <p class="skill-strip">Python / SQL / JavaScript</p>
+      </header>
+
+      <nav class="section-dock" aria-label="Portfolio sections">
+        <button class="dock-button active" type="button" data-section="home"><span>Home</span></button>
+        <button class="dock-button" type="button" data-section="about"><span>About</span></button>
+        <button class="dock-button" type="button" data-section="projects"><span>Projects</span></button>
+        <button class="dock-button" type="button" data-section="skills"><span>Skills</span></button>
+        <button class="dock-button" type="button" data-section="experience"><span>Experience</span></button>
+        <button class="dock-button" type="button" data-section="contact"><span>Contact</span></button>
+      </nav>
+
+      <aside id="section-panel" class="section-panel" aria-live="polite" aria-hidden="true">
+        <div class="panel-header">
+          <div>
+            <p id="panel-kicker" class="panel-kicker">Selected Rocket</p>
+            <h2 id="panel-title">Home Rocket</h2>
+          </div>
+          <button id="close-panel" class="icon-button" type="button" aria-label="Return to full launch base">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div id="panel-content" class="panel-content"></div>
+      </aside>
+
+      <div id="loading" class="loading" role="status">Launch base online</div>
+    </main>
+    <script type="module" src="./src/main.js?v=rocket-performance-content"></script>
+  </body>
+</html>
